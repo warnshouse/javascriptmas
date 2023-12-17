@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-word: #5134ff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 span {
+  background-color: var(--bg-word);
+  color: #fff;
+  padding: 0.3em;
+  margin: 0.1em;
+  border-radius: 0.2em;
+}
+
+h1 span:before {
+  content: "derederes";
+  animation-name: swapper;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swapper {
+  25% {
+    content: "tsunderes";
+  }
+  50% {
+    content: "yanderes";
+  }
+  75% {
+    content: "nyanderes";
+  }
+}
